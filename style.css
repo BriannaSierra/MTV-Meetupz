@@ -1,0 +1,255 @@
+body{
+	background-color: black;
+}
+
+header{
+	display: flex;
+	justify-content: left;
+
+}
+
+#leftHeader{
+	width: 20%;
+	background-color:orange;
+}
+
+#rightHeader{
+	width: 80%;
+		background-color:green;
+
+}
+
+@font-face{
+	font-family: 'coolvetica'; 
+	src:url('Fonts/coolveticarg.otf');
+	font-family: 'spraypaint'; 
+	src:url('Fonts/Reticulum3.ttf'); 
+}
+.MTVLogo{
+	padding-top: 2%;
+	transition: width 2s, height 4s;
+	justify-content: left;
+}
+.MTVLogo:hover{
+	width: 400px;
+  height: 300px;
+}
+h1{
+	color:#eaedee;
+	padding-top: 3%; 
+	font-family: 'spraypaint', Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif';
+	font-size: 115px;
+	font-weight: 100px;
+	line-height: 3px;
+	text-align: left;
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+h2{
+	color:#eaedee; 
+	font-family: 'coolvetica', Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-weight: 100;
+	font-size: 50px;
+	line-height: 1.5;
+	text-align: center;
+	justify-content:center;
+	text-decoration:none;
+}
+h2 .a{
+	text-decoration: none;
+	color: white; 
+	}
+h3{
+	color:black;
+	font-family: 'coolvetica', Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 23px;
+}
+
+/* TYPE 
+font-family: "Reticulum 3";
+font-family: "coolvetica rg" ;
+font-family:  Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+*/
+
+#Showz
+{
+	background-image: url("Assets/Astro.png");
+	box-shadow: inset 0 0 0 1000px rgba(255, 61, 61, 0.56);
+	padding: 10px;
+  	text-decoration: none; 
+}
+#Showz a{
+	color:aliceblue; 
+	padding-left: 6%;
+	text-align: center;
+}
+
+.container:hover{
+	filter: saturate(4);
+	opacity: 1;
+	animation: colorchange 2s; 
+	width:80%;
+}
+#FullEpisodez
+{
+		background-image: url("Assets/Astro.png");
+			box-shadow: inset 0 0 0 1000px rgba(61, 255, 126, 0.4);
+}
+#TVSchedule
+{
+	background-image: url("Assets/Astro.png");
+	text-decoration: none; 
+	box-shadow: inset 0 0 0 1000px rgba(67, 68, 152, 0.81);
+	text-decoration: none !important; 
+}
+a.hpButton{
+		text-decoration: none !important; 
+color: white;
+}
+
+.BlogAboutit
+{
+	text-decoration: underline;
+	align-content: center;
+}
+.BlogAboutit:hover{
+	color: #f7f908;
+}
+footer{
+	font-family: coolvetica;
+	background-color: #00aacd;
+	color: black;
+	padding: 5% auto; 
+}
+#assignment3 {
+	color: white;
+	background-color: crimson;
+	padding: 10px;
+	margin: 10px auto;
+	border-style: solid;
+}
+#ShowsShowcase{
+	width: 90%;
+	margin: 5px auto; 
+	overflow: auto;
+	display: flex;
+  	flex-wrap: wrap;
+}
+.Showtime{
+	flex: 20%;
+  	padding: 2px;
+}
+
+.container {
+	color: white;
+	justify-content:center;
+	font-family: coolvetica;
+	text-align: center;
+	width: 50%;
+	margin: 3% auto;
+	height: 200px;
+	line-height: 300px;
+	opacity: 0.3;
+	transition: opacity 1s;
+	transition: width 2s;
+  padding: 10px;
+ 
+}
+@keyframes colorchange {
+	from {background-color: none;}
+	to {background-color: #ff3c3c;}
+}
+
+@media only screen and (min-width: 721px) and (max-width: 990px) {  
+	.MTVLogo{
+		height: 200px;
+		width: 300px; 
+		justify-content: left; 
+		padding: 5px;
+	}
+	h1{
+		font-size: 70px;
+		text-align: center;
+		line-height: 25px;
+	}
+	nav{
+		margin-left: 0px;
+		padding-top: 20px;
+		text-align: center;
+		margin: 0px auto;
+	}
+
+	footer{
+		height: 400px; 
+		padding: 5px auto;
+
+	}
+	h3{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 720px){
+	.MTVLogo{
+		height: 50px;
+		width: 100px; 
+		justify-content: left; 
+		padding: 5px;
+	}
+	.MTVLogo:hover{
+	width: 100px;
+	height: 200px;
+	}
+	footer{
+		height:50px; 
+		padding: 5px auto;
+	}
+	h1{
+		font-size: 60px;
+		text-align: center;
+		line-height: 5px;
+	}
+}
+	
+.topnav {
+  overflow: hidden;
+  background-color: #00aacd;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav h3 a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav h3{
+	float: left;
+width: 20%;
+padding-left: 10px; 
+}
+	
+.topnav a.icon {
+  float: left;
+}
+
+.topnav h3 a:hover {
+ color:#f7f908;
+}
+.topnav h3:hover {
+ color:#f7f908;
+}
+	.topnav #myLinks {
+  display: none;
+	}
